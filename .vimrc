@@ -54,3 +54,11 @@ autocmd FileType python let &makeprg='pylint --reports=n --output-format=parseab
 " this would be set if you wanted to run pylint for EVERYTHING running 'make'
 " set makeprg=pylint\ --reports=n\ --output-format=parseable\ %:p
 
+" add closing braces, brackets, and quotes
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
