@@ -11,7 +11,7 @@ set encoding=utf-8
 set fileencoding=utf-8
 
 " whitespace
-highlight ExtraWhitespace ctermbg=red guibg=red
+highlight ExtraWhitespace ctermbg=lightblue
 match ExtraWhitespace /\s\+$/
 
 " all tabs turn into 4 spaces
