@@ -1,3 +1,52 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+
+" Keep Plugin commands between vundle#begin/end.
+
+" Rich terminal colors plugin
+" https://github.com/sonph/onehalf/tree/master/vim
+Plugin 'sonph/onehalf', {'rtp': 'vim/'}
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+" mice.
+set mouse=a
+set ttymouse=xterm2
+
+
+" color related stuff
+colorscheme onehalfdark
+let g:airline_theme='onehalfdark'
+
+if exists('+termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
+
 " general appearance
 set number
 set t_Co=256
@@ -26,9 +75,7 @@ set autoindent
 set preserveindent
 set copyindent
 
-" mice.
-set mouse=a
-set ttymouse=xterm2
+
 
 " search
 set ignorecase
