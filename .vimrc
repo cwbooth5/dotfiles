@@ -100,9 +100,7 @@ set errorformat=%f:%l:\ %m
 " this would be set if you wanted to run pylint for EVERYTHING running 'make'
 " set makeprg=pylint\ --reports=n\ --output-format=parseable\ %:p
 
-" add closing braces, brackets, and quotes
-inoremap " ""<left>
-inoremap ' ''<left>
+" add closing braces and brackets
 inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>
