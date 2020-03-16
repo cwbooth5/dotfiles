@@ -75,8 +75,6 @@ set autoindent
 set preserveindent
 set copyindent
 
-
-
 " search
 set ignorecase
 set smartcase
@@ -97,6 +95,7 @@ set ttyfast
 
 " for all python files, run pylint when I issue the 'make' command in vim
 autocmd FileType python let &makeprg='pylint --reports=n --output-format=parseable %:p'
+set errorformat=%f:%l:\ %m
 
 " this would be set if you wanted to run pylint for EVERYTHING running 'make'
 " set makeprg=pylint\ --reports=n\ --output-format=parseable\ %:p
