@@ -1,0 +1,16 @@
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[user]
+	name = Bill Booth
+	email = cwbooth5@gmail.com
+[core]
+    editor = vim
+[push]
+    default = simple
+[pull]
+    rebase = true
+[fetch]
+    prune = true
