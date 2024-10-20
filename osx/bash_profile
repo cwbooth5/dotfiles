@@ -3,3 +3,6 @@ alias cleanupDS="find . -type f -name '*.DS_Store' -ls -delete"
 
 # spotlight: Search for a file using MacOS Spotlight's metadata
 spotlight () { mdfind "kMDItemDisplayName == '$@'wc"; }
+
+# sublime text shortcut
+alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
